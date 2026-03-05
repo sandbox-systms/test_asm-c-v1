@@ -2,8 +2,9 @@ global soma
 
 section .text
 
-soma: mov rax, rdi
-    add, rax, rsi
+soma: 
+    mov rax, rdi
+    add rax, rsi
     ret 
 
 ; ==================================================================================================
