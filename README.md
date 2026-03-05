@@ -66,11 +66,6 @@ gcc src/main.c src/func.o -o main
 - Memory manipulation routines
 - Inline assembly version
 - Disassembly analysis with objdump
-
-- ASM=nasm
-CC=gcc
-
-all:
 	$(ASM) -f elf64 src/func.asm -o src/func.o
 	$(CC) src/main.c src/func.o -o main
 
